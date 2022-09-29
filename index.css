@@ -1,175 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
-:root{
-	--colorLetras:  red;
-	font-size: 20px;
+.header{
+  background-color: #353a40!important;
 }
 
-@keyframes ejemplo{
-	0%{left: 0px; top: 0px; background-color: hotpink;}
-	25%{left: 200px; top: 0px; background-color: black;}
-	50%{left: 200px; top: 200px; background-color: red;}
-	75%{left: 0px; top: 200px; background-color: blue;}
-	100%{left: 0px; top: 0px; background-color: hotpink;}
+.color-menu{
+  color:#999a95!important;
 }
 
-h1{
-	background-color: grey;
-	/*width: 75%;*/
-	display: ;
+.color-verde{
+  color:#299b44!important;
 }
 
-#animation{
-	position: relative;
-	width: 100px;
-	height: 100px;
-	background-color: hotpink;
-	animation: ejemplo 2s 3;
+.color-menu-selected, .color-blanco{
+  color:#ffffff!important;
 }
 
-#transition{
-	width: 100px;
-	height: 100px;
-	background-color: orange;
-	transition: width 5s 800ms ease, background-color 1s 800ms linear;
-	transform: rotate(45deg);
-}
+.btn-group-xs > .btn, .btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  }
 
-#transition:hover{
-	width: 300px;
-	background-color: green;
-}
+  .fondo{
+    background:url('hawaii.jpg');
+    height: 80vh;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    color: #ffffff;
 
-h3{
-	position: sticky;
-	top: 0px;
-	left: 25%;
-	z-index: -1;
-}
+  }
 
-section{
-	width: 100%;
-	
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(4, 1fr);
-	grid-template-areas:
-	"nav nav nav"
-	"main main sec1"
-	"main main sec2"
-	"foot foot foot";
-	background: grey;
-	gap: 5px;
-	padding: 5px;
-}
-
-section *{
-	background: skyblue;
-}
-
-@media only screen and (max-width: 425px){
-	section{
-		background: blue;
-		grid-template-areas: 
-		"nav"
-		"main"
-		"sec1"
-		"sec2"
-		"foot";		
-	}
-
-	section * {
-		background: red ;
-	}
-}
-
-@media only screen and (min-width: 426px) and (max-width: 768px){
-	section{
-		background: black;
-		grid-template-areas: 
-		"nav nav"
-		"main sec1"
-		"main sec2"
-		"foot foot";		
-	}
-}
-
-nav{
-	height: 100px;
-	display: flex;
-	background:  darkgray;
-	flex-flow: row wrap;
-	gap: 10px 30px;
-	justify-content: center;
-	align-items: center;
-}
-
-nav *{
-	background: grey;
-	padding: 3px;
-}
-
-header h2{
-	background-color: hotpink;
-	width: 50%;
-	font-size: 1rem;
-	color: var(--colorLetras) !important;
-}
-
-span{
-	color: #d91ca3;
-	font-weight: bold;
-	font-family: 'Silkscreen', cursive;
-}
-
-footer{
-
-}
-
-h4 + h3{
-	color: green;
-}
-
-#referencia{
-	color: var(--colorLetras);
-}
-
-#piePagina{
-	background-color: grey;
-}
-
-textarea{
-	width: 400px;
-	height: 200px;
-	background-color: pink;
-	border-top: 3px dotted green;
-	border-right-color: red;
-	border-bottom-width: 5px;
-	border-style: dashed;
-	border-radius: 100px 5px;
-}
+  .fondoPlaya{
+    background:url('honolulu.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height: 50vh;
 
 
-.grupo1 {
-	color: var(--colorLetras);
-	overflow: auto;
-	width: 300px;
-	height: 150px;
-	border:  1px solid black;
-}
+  }
 
-h2 {
-	color: blue !important;
-}
-
-/*
-SINTAXIS BÁSICA CSS
- selector { 
-	propiedad: valor;
-	propiedad2: valor2;
-}
-
-margin: 10px;
-margin-bottom: 15px;
-padding: 10px;
-border: 2px solid red;
+  .fondoGris{
+    background-color: #353a40;
+    color: #ffffff;
+  }
+  
+  .botonera{
+    padding:20px;
+  }
