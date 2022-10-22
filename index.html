@@ -28,113 +28,181 @@
           <a class="nav-link color-menu" href="#">Los Oradores</a>
           <a class="nav-link color-menu" href="#">EL lugar y la fecha</a>
           <a class="nav-link color-menu">Conviertete en orador</a>
-          <a class="nav-link color-verde" href="#">Comprar Tickets</a>
+          <a class="nav-link color-verde"  onclick="mostrarTickets()" href="#">Comprar Tickets</a>
         </div>
       </div>
     </div>
   </nav>
   <!--Slider-->
+  <main class="container-fluid m-auto" id="mainContainer">
   
-  <!--End Slider-->
-  <div class="container-fluid fondo">
-    <div class="row" style="text-align: right" >
-      <div class="col-6 p-5"></div>
-      <div class="col-6 p-5" style="padding-top: 250px;" >
-        <h2>Conf Bs As</h2>
-        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-        <div class="botonera">
-          <a href="#" class="btn btn-ligh border color-blanco">Quiero ser orador</a>
-          <a href="#" class="btn btn-success">Comprar Tickets</a>
+    <section class="row" id="home">
+    <!--End Slider-->
+      <div class="container-fluid fondo">
+        <div class="row" style="text-align: right" >
+          <div class="col-6 p-5"></div>
+          <div class="col-6 p-5" style="padding-top: 250px;" >
+            <h2>Conf Bs As</h2>
+            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+            <div class="botonera">
+              <a href="#" class="btn btn-ligh border color-blanco">Quiero ser orador</a>
+              <a href="#" class="btn btn-success">Comprar Tickets</a>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <!--Cards-->
+      <div class="container">
+        <div class="container text-center">
+          <h6>CONOCE A LOS</h6>
+          <h2>ORADORES</h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="steve.jpg" width="100%" alt="Card image cap">
+              <div class="card-body">
+                <a href="#" class="btn btn-warning btn-xs">Javascript</a>
+                <a href="#" class="btn btn-info btn-xs">React</a>
+                <h5 class="card-title">Steve Jobs</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="bill.jpg" width="100%" alt="Card image cap">
+              <div class="card-body">
+                <a href="#" class="btn btn-warning btn-xs">Javascript</a>
+                <a href="#" class="btn btn-info btn-xs">React</a>
+
+                <h5 class="card-title">Bill Gates</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="ada.jpeg" width="100%" alt="Card image cap">
+              <div class="card-body">
+                <a href="#" class="btn btn-secondary btn-xs">Negocios</a>
+                <a href="#" class="btn btn-danger btn-xs">Startups</a>
+                <h5 class="card-title">Ada Lovelace</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Cards-->
+      <!--Playa-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 fondoPlaya"></div>
+          <div class="col-6 fondoGris" >
+            <h2>Conf Octubre</h2>
+            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+            <div class="botonera">
+              <a href="#" class="btn btn-ligh border color-blanco">Conocé más</a>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+      <!--Fin Playa-->
+      <!--Orador-->
+      <div class="container">
+        <div class="container text-center">
+          <h6>CONVIERTETE EN UN</h6>
+          <h2>ORADOR</h2>
+          <h6>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</h6>
+        </div>
+
+        <div class="row g-3">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+          </div>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué queres hablar?"></textarea>
+          <label for="exampleFormControlTextarea1" class="form-label">Recuerda incluir un titulo para tu charla</label>
+        </div>
+        <button type="button" class="btn btn-lg btn-success">Enviar</button>
+
+      </div>
+    <!--Fin Orador-->
+  </section>
+  <section class="row invisible" id="tickets">
+
+    <!-- Sección donde se añadirán el HTML dinámico de los productos que agregue el usuario final -->
+    <section id="carrito" class="col-3 border border-primary mh-100 mw-100 overflow-auto">
+      
+      <div class="d-flex align-content-end flex-column">
+        <button type="button" class="btn btn-outline-success d-none">Completar compra</button>
+      </div>
+    </section>
+
+    <!-- Sección donde se añadirá el HTML dinámico con la información de cada producto -->
+    <section class="col-12 border border-primary mh-100 mw-100 overflow-auto">
+      <div class="container">
+          <div id="lista" class="row p-1">
+          </div> 
+      </div>
+    </section>
+    <section class="col-12 border border-primary mh-100 mw-100 overflow-auto">
+      <h2>VENTA VALOR TICKET $200</h2>
+    </section>
+    <form id="formularioCarrito">
+      <div class="row g-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+
+      <div class="row g-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
+        </div>
+        <div class="col">
+          <select class="form-control" id="tipoTicket">
+            <option value="0.8">Estudiante</option>
+            <option value="0.5">Trainee</option>
+            <option value="0.15">Junior</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="form-group">
+          <button type="button" class="btn btn-outline-success" onclick="borrarFormulario()">Borrar</button>
+          <button type="button" class="btn btn-outline-success" onclick="calcularTotal()">Resumen</button>
         </div>
       </div>  
+    </form> 
+    <div class="row g-3 bg-info" >
+      <div>Total a Pagar:$<span id="total"></span>
     </div>
-  </div>
-  <!--Cards-->
-  <div class="container">
-    <div class="container text-center">
-      <h6>CONOCE A LOS</h6>
-      <h2>ORADORES</h2>
     </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top" src="steve.jpg" width="100%" alt="Card image cap">
-          <div class="card-body">
-            <a href="#" class="btn btn-warning btn-xs">Javascript</a>
-            <a href="#" class="btn btn-info btn-xs">React</a>
-            <h5 class="card-title">Steve Jobs</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top" src="bill.jpg" width="100%" alt="Card image cap">
-          <div class="card-body">
-            <a href="#" class="btn btn-warning btn-xs">Javascript</a>
-            <a href="#" class="btn btn-info btn-xs">React</a>
-
-            <h5 class="card-title">Bill Gates</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top" src="ada.jpeg" width="100%" alt="Card image cap">
-          <div class="card-body">
-            <a href="#" class="btn btn-secondary btn-xs">Negocios</a>
-            <a href="#" class="btn btn-danger btn-xs">Startups</a>
-            <h5 class="card-title">Ada Lovelace</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--End Cards-->
-  <!--Playa-->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-6 fondoPlaya"></div>
-      <div class="col-6 fondoGris" >
-        <h2>Conf Octubre</h2>
-        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-        <div class="botonera">
-          <a href="#" class="btn btn-ligh border color-blanco">Conocé más</a>
-        </div>
-      </div>
-      
-
-    </div>
-  </div>
-  <!--Fin Playa-->
-  <!--Orador-->
-  <div class="container">
-    <div class="container text-center">
-      <h6>CONVIERTETE EN UN</h6>
-      <h2>ORADOR</h2>
-      <h6>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</h6>
-    </div>
-
-    <div class="row g-3">
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
-      </div>
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
-      </div>
-    </div>
-    <div class="mb-3">
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué queres hablar?"></textarea>
-      <label for="exampleFormControlTextarea1" class="form-label">Recuerda incluir un titulo para tu charla</label>
-    </div>
-    <button type="button" class="btn btn-lg btn-success">Enviar</button>
-
-  </div>
-  <!--Fin Orador-->
+  </section>
+  </main>
+  
+  <footer class="container-fluid lead bg-primary">
+    <p class="text-light text-center">Diseñado por <b class="font-italic">Pablo.</b> Todos los derechos reservados.</p>
+  </footer>
+  <script src="scriptCarrito.js"></script>
 
 </body>
 </html>
